@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle('Ping') 
     .addField(`the bots current ping , \`${Date.now() - message.createdTimestamp}\` ms`)
     .setDescription('ping')
-    .setFooter(createdTimestamp)
+    .setFooter(Firo Bot by xFijo and mxnty)
     message.channel.send(embed);
 }
 module.exports.config = {
