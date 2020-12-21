@@ -28,7 +28,8 @@ module.exports.run = async (client, message, args) => {
     .setTitle('Commands')
     .addField(`Information [${commands.info.size}]`, commands.info.map(x => `\`${x.config.name}\``).join(', '))
     //.addField(`Moderation [${commands.moderation.size}]`, commands.moderation.map(x => `\`${x.config.name}\``).join(', '))
-    .setFooter('cheese on a sunday', TimeStamp)
+    .setFooter('cheese on a sunday')
+    .setTimestamp()
     message.channel.send(embed)
   }
 }
