@@ -14,13 +14,13 @@ module.exports.run = async (client, message, args) => {
     .setColor(10181046)
     .setTitle('Command')
     .setDescription(`Command information for ${command.config.name}.
-    .setFooter('Firo Bot by xFijo and mxnty')
     **-** Name: **${command.config.name}**
     **-** Description: **${command.config.description}**
     **-** Category: **${command.config.category}**
     **-** Aliases: **${command.config.aliases ? command.config.aliases.map(x => x).join(', ') : 'None'}**
     **-** Usage: **${command.config.name} ${command.config.usage}**
     **-** Example: **${command.config.name} ${command.config.example}**`)
+    .setFooter('Firo Bot by xFijo and mxnty')
     message.channel.send(embed);
   } else {
     const embed = new MessageEmbed()
