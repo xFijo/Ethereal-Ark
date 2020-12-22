@@ -16,6 +16,6 @@ module.exports.config = {
     usage: 'mxnty',
     example: '...',
   
-    ownerOnly: true,
+    ownerOnly: false,
     guildOnly: false
 }
