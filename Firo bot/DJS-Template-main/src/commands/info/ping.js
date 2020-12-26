@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     .addField(`the bots current ping , \`${Date.now() - message.createdTimestamp}\` ms`)
     .setDescription('ping')
     .setFooter('Ethereal Ark Bot by xFijo')
-    .addTimeStamp
+    .setTimeStamp()
     message.channel.send(embed);
 }
 module.exports.config = {
