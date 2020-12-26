@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
     .setColor(1752220)
     .setTitle('Commands')
     .addField(`Information [${commands.info.size}]`, commands.info.map(x => `\`${x.config.name}\``).join(', '))
-    //.addField(`Moderation [${commands.moderation.size}]`, commands.moderation.map(x => `\`${x.config.name}\``).join(', '))
+    .addField(`Moderation [${commands.moderation.size}]`, commands.moderation.map(x => `\`${x.config.name}\``).join(', '))
     .setFooter('Ethereal Ark Bot by xFijo')
     .setTimestamp()
     message.channel.send(embed)
