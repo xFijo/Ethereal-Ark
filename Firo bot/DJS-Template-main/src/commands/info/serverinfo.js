@@ -5,7 +5,7 @@ const no = '<:no:782667011665952799>';
 
 module.exports.run = async (client, message, args) => {
   const embed = new MessageEmbed()
-  .setColor(10181046)
+  .setColor(1752220)
   .setThumbnail(message.guild.iconURL({dynamic:true}))
   .setAuthor(message.guild.name, message.guild.iconURL({dynamic:true}))
   .addField('General', `Owner: ${message.guild.owner}\nRegion: ${message.guild.region}\nMembers: ${message.guild.memberCount}\nText Channels: ${message.guild.channels.cache.filter(x => x.type === 'text').size}\nVoice Channels: ${message.guild.channels.cache.filter(x => x.type === 'voice').size}`)
