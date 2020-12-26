@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     
     if (!member) return message.channe.send('Please provide a member to kick.');
     
-    let reason = arg.slice(1).join(' ');
+    let reason = args.slice(1).join(' ');
     
     const embed = new MessageEmbed()
     .setColor('ORANGE')
