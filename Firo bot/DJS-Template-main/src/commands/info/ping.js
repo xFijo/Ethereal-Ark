@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
     const embed = new MessageEmbed()
-    .setColor(10181046)
+    .setColor(1752220)
     .setTitle('Ping') 
     .addField(`the bots current ping , \`${Date.now() - message.createdTimestamp}\` ms`)
     .setDescription('ping')
