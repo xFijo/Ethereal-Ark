@@ -19,7 +19,7 @@ client.aliases = new Collection();
 
 client.on('ready', () => {
     // things before
-    client.user.setActivity('?help  #ad  xFijo#0999', { type: 'WATCHING' }); 
+    client.user.setActivity('$help  #ad  xFijo#0999', { type: 'WATCHING' }); 
 });
 
 client.on('message', async message => {
