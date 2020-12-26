@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
   
   if (command) {
     const embed = new MessageEmbed()
-    .setColor(10181046)
+    .setColor(1752220)
     .setTitle('Command')
     .setDescription(`Command information for ${command.config.name}.
     **-** Name: **${command.config.name}**
@@ -20,15 +20,15 @@ module.exports.run = async (client, message, args) => {
     **-** Aliases: **${command.config.aliases ? command.config.aliases.map(x => x).join(', ') : 'None'}**
     **-** Usage: **${command.config.name} ${command.config.usage}**
     **-** Example: **${command.config.name} ${command.config.example}**`)
-    .setFooter('Firo Bot by xFijo and mxnty')
+    .setFooter('Ethereal Ark Bot by xFijo')
     message.channel.send(embed);
   } else {
     const embed = new MessageEmbed()
-    .setColor(10181046)
+    .setColor(1752220)
     .setTitle('Commands')
     .addField(`Information [${commands.info.size}]`, commands.info.map(x => `\`${x.config.name}\``).join(', '))
     //.addField(`Moderation [${commands.moderation.size}]`, commands.moderation.map(x => `\`${x.config.name}\``).join(', '))
-    .setFooter('cheese on a sunday')
+    .setFooter('Ethereal Ark Bot by xFijo')
     .setTimestamp()
     message.channel.send(embed)
   }
