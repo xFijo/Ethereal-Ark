@@ -20,7 +20,8 @@ module.exports.run = async (client, message, args) => {
     if (reason) embed.addField('Reason', reason, true);
     
     let c = message.guild.channels.cache.find(c => c.name.includes('log'));
-    
+
+    await member.kick({reason: reason});
     message.channel.send(embed).then(m => m.delete({timeout: 10000}));
     
     if (c) c.send(embed);
@@ -28,7 +29,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.config = {
     name: 'kick',
     description: 'Kicks a member from the server.',
-    category: 'info',
+    category: 'moderation',
     aliases: ['k'],
     usage: '<member> [reason]',
     example: '@xFijo Asked for it',
