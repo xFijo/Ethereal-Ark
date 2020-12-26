@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
 
     await member.ban({reason: reason});
     message.channel.send(embed).then(m => m.delete({timeout: 10000}));
-    member.send(`You got banned from ${message.guild.name} for ${reason}`);
+    member.send(`You got banned from ${message.guild.name} for ${reason}`).catch(err => {});
     
     if (c) c.send(embed);
 }
