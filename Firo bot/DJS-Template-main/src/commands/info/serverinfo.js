@@ -10,7 +10,8 @@ module.exports.run = async (client, message, args) => {
   .setAuthor(message.guild.name, message.guild.iconURL({dynamic:true}))
   .addField('General', `Owner: ${message.guild.owner}\nRegion: ${message.guild.region}\nMembers: ${message.guild.memberCount}\nText Channels: ${message.guild.channels.cache.filter(x => x.type === 'text').size}\nVoice Channels: ${message.guild.channels.cache.filter(x => x.type === 'voice').size}`)
   .addField('Status', `Large: ${message.guild.large ? yes : no}\nVerified: ${message.guild.verified ? yes : no}\nPartnered: ${message.guild.partnered ? yes : no}\nServer Boost Level: ${message.guild.premiumTier}`)
-  .setFooter('Firo Bot by xFijo and mxnty')
+  .setFooter('Ethereal Ark Bot by xFijo')
+  .setTimeStamp()
   message.channel.send(embed);
 }
 
